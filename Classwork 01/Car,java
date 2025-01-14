@@ -1,0 +1,20 @@
+public class Car {
+    int speed;
+    double regularPrice;
+    String color;
+
+    public Car(int speed, double regularPrice, String color) {
+        this.speed = speed;
+        this.regularPrice = regularPrice;
+        this.color = color;
+    }
+    public double getSalePrice() {
+        return regularPrice;
+    }
+    public static void main(String[] args) {
+        Car myCar = new Car(120, 20000.00, "Red");
+        System.out.println("Speed: " + myCar.speed);
+        System.out.println("Price: " + myCar.getSalePrice());
+        System.out.println("Color: " + myCar.color);
+    }
+}
